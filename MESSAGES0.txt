@@ -1,0 +1,1320 @@
+~MSG 1
+ Is this acceptable?
+**END_
+
+~MSG 2
+ A little dwarf with a big knife 
+ blocks your way.
+**END_
+
+~MSG 3
+ A little dwarf just walked around 
+ a corner, saw you, threw a little 
+ axe at you (which missed,)
+ cursed, and ran away.
+**END_
+
+~MSG 4
+ There is a threatening little dwarf 
+ in the room with you!
+**END_
+
+~MSG 5
+ A sharp knife is thrown at you!
+**END_
+
+~MSG 6
+ The knife misses you by inches!
+**END_
+
+~MSG 7
+ The knife is thrown very accurately
+ and gets you in the chest!
+**END_
+
+~MSG 8
+ A hollow voice says "Plugh".
+**END_
+
+~MSG 9
+ The knife bounces harmlessly off 
+ your magic cloak.
+**END_
+
+~MSG 9a
+...................................
+.................00.................
+.00000...0000..000000.00000...0000..
+.00..00.00..00...00...00..00.00..00.
+.00.....000000...00...00.....00..00.
+.00.....00.......00...00.....00..00.
+.00......0000.....000.00......0000..
+....................................
+**END_
+
+~MSG 9b
+...................................
+.00.....................00..........
+.00......0000...00000.........0000..
+.00000......00.00......000...00.....
+.00..00..00000..0000....00...00.....
+.00..00.00..00.....00...00...00.....
+.00000...00000.00000...0000...0000..
+....................................
+**END_
+
+~MSG 9b
+...................................
+...............**...................
+..****..**..**.**......****..*****..
+.**.....**..**.*****..**..**.**..**.
+.**.....**..**.**..**.******.**.....
+.**......*****.**..**.**.....**.....
+..****.....**..*****...****..**.....
+........****........................
+**END_
+
+~MSG 9b
+.........****...****....****.......
+..........**...**..**....**........
+..........**...**..**....**........
+*****.....**...**..**....**....***.
+..........**...**..**....**........
+.......**.**...**..**....**........
+........***.....****....****.......
+...................................
+**END_
+
+~MSG 10
+ FOR MORE INFORMATION
+ 1O GOTO RETRO-BASIC,COM
+**END_
+
+~MSG 10
+ A burley troll steps out from beneath 
+ the bridge and blocks your way.  
+ "You must give me things of great 
+ value or I won't let you cross my 
+ bridge.  Pay or return from whence  
+ you came!", he says grumpily.
+**END_
+
+~MSG 11
+ A voice booms out, "Leave it alone!"
+**END_
+
+~MSG 12
+ A voice booms out, 
+ "That word doesn't work here!"
+**END_
+
+~MSG 13
+ The batteries in your lamp  growing 
+ weaker.  They will only last for
+ #VAR1# more turns!
+**END_
+
+~MSG 14
+ I'm game. 
+ Would you care to explain how?
+**END_
+
+~MSG 15
+ The magazine disappears in a puff of 
+ green smoke as it hits the ground.  A
+ loud voice echoes through the cave, 
+ "Well done!"
+**END_
+
+~MSG 16
+ It is now pitch dark.  If you proceed 
+ you will likely fall into a pit.
+**END_
+
+~MSG 17
+ The cave will close in #VAR3# turns!
+**END_
+
+~MSG 18
+With a giant running leap, you sail up and over the chasm!  Unfortunately,
+however, you don't sail over ALL of the chasm.  You fall for a long time
+before landing on the rocks that litter the floor of the pit far below.
+**END_
+
+~MSG 19
+The bird is frightened right now and 
+you cannot catch it no matter what
+ you try.  Perhaps you might try later.
+**END_
+
+~MSG 20
+Going that way would require getting
+ VERY close to the snake!  I'm sorry, but
+I just can't allow it.  For your own good,
+ you can't go that way.
+**END_
+
+~MSG 21
+You can't kill the snake, or drive it away, or avoid it, or anything like
+that.  There is a way to get by, but you don't have the necessary resources
+right now.
+**END_
+
+~MSG 22
+You can't read in the dark!
+**END_
+
+~MSG 23
+You fell into a pit and broke every 
+bone in your body!
+**END_
+
+~MSG 24
+You are already carrying the 
+$NOUN$, dummy!
+**END_
+
+~MSG 25
+You can't possibly be serious!
+**END_
+
+~MSG 26
+The bird was unafraid when you 
+entered, but as you approach it 
+becomes disturbed and you cannot catch it.
+**END_
+
+~MSG 27
+You can catch the bird, but you 
+cannot carry it.
+**END_
+
+~MSG 28
+Use just one word, i.e., just "$NOUN$".
+**END_
+
+~MSG 29
+Sorry, but you don't have the 
+necessary resources to $VERB$ the
+$NOUN$!
+**END_
+
+~MSG 30
+The little bird attacks the green snake, and in an astounding flurry drives
+the snake away.
+**END_
+
+~MSG 31
+You don't have any keys!
+**END_
+
+~MSG 32
+It doesn't have a lock, so it cannot
+ be locked or unlocked!
+**END_
+
+~MSG 33
+The $NOUN$ is already unlocked!
+**END_
+
+~MSG 34
+The $NOUN$ is already locked!
+**END_
+
+~MSG 35
+OK.  The $NOUN$ is now locked!
+**END_
+
+~MSG 36
+OK.  The $NOUN$ is now unlocked!
+**END_
+
+~MSG 37
+Sorry, but your batteries are dead
+ and there is no way to use the 
+lamp.
+You could be in real trouble!
+**END_
+
+~MSG 38
+Sorry, but you have no source of light!
+**END_
+
+~MSG 39
+Your lamp is now shining brightly!
+**END_
+
+~MSG 40
+Your lamp is now off.
+**END_
+
+~MSG 41
+There is no way to get past the bear
+ to unlock the chain, which is probably
+just as well.
+**END_
+
+~MSG 42
+Nothing happens.
+**END_
+
+~MSG 43
+You now have the cage with the 
+bird in it.  The bird has stopped singing.
+**END_
+
+~MSG 44
+However, it didn't break.
+**END_
+
+~MSG 45
+The little bird is now dead.  Its body
+ disappears.
+**END_
+
+~MSG 46
+Attacking the snake both doesn't 
+work and is very dangerous.
+**END_
+
+~MSG 47
+You killed a little dwarf.
+**END_
+
+~MSG 48
+You attack a little dwarf, but he 
+dodges out of the way.
+**END_
+
+~MSG 49
+With what? Your bare hands?
+**END_
+
+~MSG 50
+Good try, but that is an old worn-out magic word.
+**END_
+
+~MSG 51
+Carefully, you climb down the 
+beanstalk to the bottom of the pit 
+-- far below.
+**END_
+
+~MSG 52
+It misses!
+**END_
+
+~MSG 53
+Quickly, you scamper across the 
+bridge -- before the troll returns.
+**END_
+
+~MSG 54
+You pet the bear affectionately and tickle it under its chin and behind its
+ears.  It seems very happy and licks your hand (UGH!).  The bear likes you and
+will follow you anywhere.  (Lucky you!)
+**END_
+
+~MSG 55
+You can't lock or unlock the keys. 
+ You have to LOCK or UNLOCK 
+something WITH
+THE KEYS!
+**END_
+
+~MSG 56
+You have crawled around in some
+ small passages and wound up back
+ where you started in the first place.
+**END_
+
+~MSG 57
+I don't know where the cave is, but hereabouts no stream can run on the
+surface for very long.  I would try the stream.
+**END_
+
+~MSG 58
+You put the cage (with the bird in it) on the ground.  The bird has stopped
+singing.
+**END_
+
+~MSG 59
+I can only tell you what you see as you move about and manipulate things.  I
+cannot tell you where remote things are.
+**END_
+
+~MSG 60
+You just barely manage to squeeze through the tunnel into the next room.
+**END_
+
+~MSG 61
+As you say the magic word, you are instantly transported to ...
+**END_
+
+~MSG 62
+Are you trying to get into the cave?
+**END_
+
+~MSG 63
+The grate is very solid and has a hardened steel lock.  You cannot enter
+without a key, and there are no keys nearby.  I would recommend looking
+elsewhere for the keys.
+**END_
+
+~MSG 64
+The trees of the forest are large hardwood oak and maple, with an occasional
+grove of pine or spruce.  There is quite a bit of undergrowth, largely birch
+and ash saplings plus nondescript bushes of various sorts.  This time of year
+visibility is quite restricted by all the leaves, but travel is quite easy if
+you detour around the spruce and berry bushes.
+**END_
+
+~MSG 65
+As you finish speaking the magic phrase, you feel a slight earth tremor.  Then
+after a moment of silence, a strange voice echoes through the cave -- "They
+have been returned to their rightful place!"
+**END_
+
+~MSG 66
+Digging without a shovel is quite impractical.  Even with a shovel progress is
+unlikely.
+**END_
+
+~MSG 67
+To $VERB$ the $NOUN$ requires dynamite.
+**END_
+
+~MSG 68
+I'm as confused as you are.
+**END_
+
+~MSG 69
+Mist is a white vapor, usually water.  Seen from time to time in caverns.  It
+can be found anywhere but is often a sign of a deep pit leading down to water.
+**END_
+
+~MSG 70
+Your feet are now wet.
+**END_
+
+~MSG 71
+I think I just lost my appetite.
+**END_
+
+~MSG 72
+Thank you.  It was delicious!
+**END_
+
+~MSG 73
+You have taken a drink from the stream.  The water tastes strongly of
+minerals, but is not unpleasant.  It is extremely cold.
+**END_
+
+~MSG 74
+The bottle of water is now empty.
+**END_
+
+~MSG 75
+Rubbing the electric lamp is not particularly rewarding.  Anyway, nothing
+exciting happens.
+**END_
+
+~MSG 76
+Peculiar.  You $VERB$ the $NOUN$ for a while, but nothing unexpected
+happens.
+**END_
+
+~MSG 77
+Your bottle is empty and the ground is wet.
+**END_
+
+~MSG 78
+You can't $VERB$ that.  It is just not allowed!
+**END_
+
+~MSG 79
+You catch the bird and put it inside the wicker cage.
+**END_
+
+~MSG 80
+Please tell me which way to go in order to $VERB$ the $NOUN$.
+**END_
+
+~MSG 81
+Unfortunately, the lock is one the other side of the grate and you can't reach
+it from here.
+**END_
+
+~MSG 82
+After you insert the coins, the vending machine makes a few belch-like noises
+and disgorges a set of brand-new batteries.
+**END_
+
+~MSG 83
+You release the bird from the wicker cage.
+**END_
+
+~MSG 84
+The door is already open and you can go through it by giving the command
+"NORTH".
+**END_
+
+~MSG 85
+The grate is now unlocked and ready to open.
+**END_
+
+~MSG 86
+Okay, If you're so smart, do it yourself!
+**END_
+
+~MSG 87
+You $VERB$ the $NOUN$ for a while.
+**END_
+
+~MSG 88
+The stream is clear and cold.  It runs down through the rocks and trees from
+north to south.
+**END_
+
+~MSG 89
+The plant cries out, "Water...water, please ....  water".
+**END_
+
+~MSG 90
+You pick up the vase from its resting place on the pillow.
+**END_
+
+~MSG 91
+As you pick up the pillow, the vase accidentally falls to the ground and
+smashes into a trillion tiny pieces.
+**END_
+
+~MSG 92
+The bear gives you an affectionate lick on the hand (UGH!) and then wanders
+off to the far end of the room.
+**END_
+
+~MSG 93
+The golden eggs vanish before your very eyes!
+**END_
+
+~MSG 94
+I believe what you want is right here with you.
+**END_
+
+~MSG 95
+You don't fit through a two-inch slit!
+**END_
+
+~MSG 96
+I respectfully suggest you go across the bridge instead of jumping.
+**END_
+
+~MSG 97
+There is no way across the fissure.
+**END_
+
+~MSG 98
+The stream flows into the slit in the rock.  It is cold and clear.
+**END_
+
+~MSG 99
+The dwarf is holding the knife very tightly.  I don't think the dwarf wants to
+part with the knife except perhaps to do you grave bodily harm.  I suggest you
+get away from here as fast as you can!
+**END_
+
+~MSG 100
+It's not hungry (It's merely pinin' for the Fjords).  Besides You have no bird
+seed.
+**END_
+
+~MSG 101
+The snake has now devoured your bird.
+**END_
+
+~MSG 102
+There's nothing here it wants to eat (Except perhaps you).
+**END_
+
+~MSG 103
+You fool, Dwarves eat only coal!  Now you've made him REALLY mad!!!
+**END_
+
+~MSG 104
+You have nothing in which to carry it.
+**END_
+
+~MSG 105
+Your bottle is already full.
+**END_
+
+~MSG 106
+There is nothing here with which to fill the bottle.
+**END_
+
+~MSG 107
+Your bottle is now full of water.
+**END_
+
+~MSG 108
+Your bottle is now full of oil.
+**END_
+
+~MSG 109
+You can't fill that.
+**END_
+
+~MSG 110
+Don't be ridiculous!
+**END_
+
+~MSG 111
+The door is very rusty and refuses to open.
+**END_
+
+~MSG 112
+The plant indignantly shakes the oil off its leaves and asks: "Water?"
+**END_
+
+~MSG 113
+The hinges are quite thoroughly rusted now and won't budge.
+**END_
+
+~MSG 114
+The oil has freed up the hinges so that the door will now move, although it
+requires some effort.
+**END_
+
+~MSG 115
+The plant has exceptionally deep roots and cannot be pulled free.
+**END_
+
+~MSG 116
+The Dwarf's knife vanished as it struck the wall of the cave.
+**END_
+
+~MSG 117
+Something you're carrying won't fit through the tunnel with you.  You'd best
+take inventory and drop something.
+**END_
+
+~MSG 118
+You can't fit this five-foot clam through that little passage!
+**END_
+
+~MSG 119
+You can't fit this five foot oyster through that little passage!
+**END_
+
+~MSG 120
+I advise you to put down the clam before opening it. >STRAIN!<
+**END_
+
+~MSG 121
+I advise you to put down the oyster before opening it.  >WRENCH!<
+**END_
+
+~MSG 122
+You don't have anything strong enough to open the clam.
+**END_
+
+~MSG 123
+You don't have anything strong enough to open the oyster.
+**END_
+
+~MSG 124
+A glistening pearl falls out of the clam and rolls away.  Goodness, this must
+really be an oyster.  (I never was very good at identifying bivalves.)
+Whatever it is, it has now snapped shut again.
+**END_
+
+~MSG 125
+The oyster creaks open, revealing nothing but oyster inside.  It promptly
+snaps shut again.
+**END_
+
+~MSG 126
+You have crawled around in some little holes and found your way blocked by a
+recent cave-in.  You are now back in the main passage.
+**END_
+
+~MSG 127
+There are faint rustling noises from the darkness behind you.
+**END_
+
+~MSG 128
+Out from the shadows behind you pounces a bearded pirate!  "Har, har" he
+chortles, "I'll just take all this booty and hide it away with me chest deep
+in the maze!".  He snatches your treasure and vanishes into the gloom.
+**END_
+
+~MSG 129
+A sepulchral voice reverberating through the cave says: "Cave closing soon.
+All adventurers exit immediately through main office."
+**END_
+
+~MSG 130
+A mysterious recorded voice groans into life and announces: "This exit is
+closed.  Please leave via main office."
+**END_
+
+~MSG 131
+It looks as though you're dead.  Well, seeing as how it's so close to closing
+time anyway, I think we'll just call it a day.
+**END_
+
+~MSG 132
+The sepulchral voice entones, "The cave is now closed."  As the echoes fade,
+there is a blinding flash of light (and a small puff of orange smoke).  . . .
+As your eyes refocus you look around and find...
+**END_
+
+~MSG 133
+There is a loud explosion, and a twenty-foot hole appears in the far wall,
+burying the Dwarves in the rubble.  You march through the hole and find
+yourself in the Cave's main office, where a cheering band of friendly elves
+carry the conquering adventurer around the room on their shoulders -- all the
+time singing "For he's a jolly good fellow!!" at the top of their lungs.
+**END_
+
+~MSG 134
+There is a loud explosion, and a twenty-foot hole appears in the far wall,
+burying the snakes in the rubble.  A river of molten lava pours in through the
+hole, destroying everything in its path, including you!!
+**END_
+
+~MSG 135
+There is a loud explosion, and you are suddenly splashed across the walls of
+the room.
+**END_
+
+~MSG 136
+The resulting ruckus has awakened the Dwarves.  There are now several
+threatening little Dwarves in the room with you!  Most of them throw knives at
+you!  All of them get you!
+**END_
+
+~MSG 137
+Oh, leave the poor unhappy bird alone.
+**END_
+
+~MSG 138
+I daresay whatever you want is around here somewhere.
+**END_
+
+~MSG 139
+A hollow voice says "Plover".
+**END_
+
+~MSG 141
+You are being followed by a very large, tame bear.
+**END_
+
+~MSG 143
+The hint will cost you 5 points.
+**END_
+
+~MSG 144
+There is nothing here with which to fill the vase.
+**END_
+
+~MSG 145
+The sudden change in temperature has delicately shattered the vase.
+**END_
+
+~MSG 146
+It is beyond your power to do that.
+**END_
+
+~MSG 147
+I don't know how to $VERB$ the $NOUN$.
+**END_
+
+~MSG 148
+It is too far up for you to reach.
+**END_
+
+~MSG 149
+You killed a little Dwarf.  The body vanished in a cloud of greasy black
+smoke.
+**END_
+
+~MSG 150
+The shell is very strong and impervious to attack.
+**END_
+
+~MSG 151
+Finally, you discover a small tunnel leading east.  You just manage to fit
+through and find yourself ...
+**END_
+
+~MSG 152
+The axe bounces harmlessly off the dragon's thick scales.  The axe lands so
+close to the dragon that you can't reach it without being fried to a crisp!
+**END_
+
+~MSG 153
+The dragon looks rather nasty.  You'd best not try it!
+**END_
+
+~MSG 154
+The little bird attacks the green dragon, and in an astounding flurry gets
+burnt to a cinder.  The ashes blow away.
+**END_
+
+~MSG 155
+The building is about 20 feet on a side and made of old bricks.  It appears to
+be a well house for a stream which runs out of the building through two pipes.
+The stream continues down a gulley to the south.
+**END_
+
+~MSG 156
+The rooms in this part of the cave are like a maze.  All of them are
+interconnected by twisting little passages heading off in all directions.
+There are also many dead ends.  You appear to be thoroughly and utterly lost.
+**END_
+
+~MSG 157
+Trolls are close relatives with the rocks and have skin as tough as that of a
+rhinoceros.  The troll fends off your blows effortlessly.
+**END_
+
+~MSG 158
+The troll deftly catches the axe, examines it carefully, and tosses it back,
+declaring, "Good workmanship, but it's not valuable enough.".
+**END_
+
+~MSG 159
+The troll catches your treasure and scurries away out of sight.
+**END_
+
+~MSG 160
+The troll refuses to let you cross.  "Give me a treasure or return from whence
+you came!", he demands.
+**END_
+
+~MSG 161
+There is no longer any way across the chasm.
+**END_
+
+~MSG 162
+Just as you reach the other side, the bridge buckles beneath the weight of the
+bear, which was still following you around.  You scramble desperately for
+support, but as the bridge collapses you stumble back and fall into the chasm.
+**END_
+
+~MSG 163
+The bear lumbers toward the troll, who lets out a startled shriek and scurries
+away.  The bear soon gives up pursuit and wanders back.
+**END_
+
+~MSG 164
+The axe misses and lands near the bear where you can't get at it.
+**END_
+
+~MSG 165
+With what?  Your bare hands?  Against his BEAR hands??
+**END_
+
+~MSG 166
+The bear is confused;  he only wants to be your friend.
+**END_
+
+~MSG 167
+For crying out loud, the poor thing is already dead!
+**END_
+
+~MSG 168
+The bear eagerly wolfs down your food, after which he seems to calm down
+considerably, and even becomes rather friendly.
+**END_
+
+~MSG 169
+The bear is still chained to the wall.
+**END_
+
+~MSG 170
+The bear is now unlocked and is free to roam about the cave.
+**END_
+
+~MSG 171
+OK.  The bear is now locked to the wall with the chain.
+**END_
+
+~MSG 172
+There is nothing here to which the bear can be locked.
+**END_
+
+~MSG 173
+There is nothing here to which the chain can be locked.
+**END_
+
+~MSG 174
+The troll catches the $NOUN$, examines it closely and then throws it
+back to you.  "That's worthless, fool!!  Give me something of value or you
+will never get across my bridge," he says angrily.
+**END_
+
+~MSG 175
+Do you want the hint?
+**END_
+
+~MSG 176
+Do you need help getting out of the maze?
+**END_
+
+~MSG 177
+You can make the passages look less alike by dropping things.
+**END_
+
+~MSG 178
+Are you trying to explore beyond the plover room?
+**END_
+
+~MSG 179
+There is a way to explore that region without having to worry about falling
+into a pit.  None of the objects available is immediately useful in
+discovering the secret.
+**END_
+
+~MSG 180
+Do you need help getting out of here?
+**END_
+
+~MSG 181
+Keep going east.
+**END_
+
+~MSG 182
+Gluttony is not one of the Troll's vices.  Avarice, however, is.
+**END_
+
+~MSG 183
+Your lamp is getting dim.. You'd best start wrapping this up, unless you can
+find some fresh batteries.  I seem to recall there's a vending machine in the
+maze.  Bring some coins with you.
+**END_
+
+~MSG 184
+Your lamp has run out of power.
+**END_
+
+~MSG 185
+There's not much point in just wandering around aimlessly, and you can't
+explore the cave without a working lamp.  So let's just call it a day.  Better
+luck next time!
+
+**END_
+
+~MSG 186
+As you turn toward the noise, the beam of your lamp falls across a bearded
+pirate.  He is carrying a large chest.  "Shiver me timbers!"  he cries, "I've
+been spotted!  I'd best hide meself off to the maze and hide me chest!"  With
+that, he vanished into the gloom.
+**END_
+
+~MSG 187
+You peer across the fissure and can just make out the other side through the
+thick white mist.  The chasm is too wide to jump.  You drop a small rock over
+the edge into the mist and it is quite a while before you hear it hit bottom.
+**END_
+
+~MSG 188
+After a few minutes of walking and a little climbing, you find yourself ...
+**END_
+
+~MSG 189
+Your lamp is getting dim, and you're out of spare batteries.  You'd best start
+wrapping this up.
+**END_
+
+~MSG 190
+I'm afraid it is written in Dwarvish (a language somewhat like LISP and
+totally unreadable).
+**END_
+
+~MSG 191
+"This is not the maze where the pirate leaves his treasure chest."
+**END_
+
+~MSG 192
+Hmm, this looks like a clue, which means it'll cost you 10 points to read it.
+Should I go ahead and read it anyway?
+**END_
+
+~MSG 193
+It says, "There is something strange about this place, such that one of the
+words I've always known now has a new effect."
+**END_
+
+~MSG 196
+"Congratulations on bringing light into the dark-room!"
+**END_
+
+~MSG 197
+You strike the mirror a resounding blow, whereupon it shatters into a myriad
+tiny fragments.
+**END_
+
+~MSG 198
+You have taken the vase and hurled it delicately to the ground.
+**END_
+
+~MSG 199
+Your bumbling activities disturbs the nearest Dwarf, who wakes up grumpily,
+takes one look at you, curses, and grabs for his axe.  It looks like you are
+in trouble!!
+**END_
+
+~MSG 200
+You didn't make it.
+**END_
+
+~MSG 201
+The dome is unclimbable!
+**END_
+
+~MSG 202
+You climb up the beanstalk and scurry through the hole in the ceiling of the
+cavern.
+**END_
+
+~MSG 203
+You can't get by the snake.
+**END_
+
+~MSG 204
+The stream flows out through a pair of 1 foot diameter sewer pipes.  It would
+be advisable to use the exit.
+**END_
+
+~MSG 205
+There is nothing here to climb.  Use "UP" to climb out of the pit.
+**END_
+
+~MSG 206
+You have climbed up the plant and out of the pit.
+**END_
+
+~MSG 207
+The plant spurts into furious growth for a few seconds.
+**END_
+
+~MSG 208
+The plant grows explosively, almost filling the bottom of the pit.
+**END_
+
+~MSG 209
+You've over-watered the plant!  It's shriveling up!  It's, It's...dying!
+It's...disappeared!  You murder!
+**END_
+
+~MSG 210
+Congratulations!  You have just vanquished a dragon with your bare hands!
+(Unbelievable, Isn't it?)
+**END_
+
+~MSG 211
+The ming vase drops with a delicate crash.
+**END_
+
+~MSG 212
+A bearded programmer steps out from the shadows and says, "Since you didn't
+try to steal any of my stuff, I'll reveal a secret password.  Use the password
+wisely and enjoy your stay in COLOSSAL CAVE, my son."  With that, the
+programmer vanishes, leaving a few 0 and 1 bits that briefly form the word:
+
+     TURBO
+
+**END_
+
+~MSG 213
+As you reach for the programmer's goodies, an enraged bearded programmer jumps
+out from concealment.  "Aha!", he crows, "I've found the SOB (that's
+'Subtract-One-and-Branch') that has been stealing my stuff.  Have you
+forgotten, my son, that my wizardly spells help to keep this cave ergodic and
+reasonably safe for adventurers like you?  Well, no more Mr. Nice Guy!!!"
+
+"First, I'll remove some of the treasure", and with that he keys in the
+following command on his keyboard:  DESTROY(TREASURES);
+
+"Next, I'll revoke some of the magic words", and he keys in the following
+command: REVOKE(MAGIC_WORDS);
+
+"And if you thought the dwarves were tough before, just watch!", as he keys
+in: MAKE_NASTIER(dwarves);
+
+"Finally, I'll kick you deep into the maze, you turkey!", as he bangs his
+keyboard with the command:  PLAYER_LOC := DEEP_IN_MAZE;
+**END_
+
+~MSG 214
+Nothing happens!!!  That is one of the magic words the programmer revoked!  By
+the way, do the dwarves seem nastier, the passages more torturous, the
+treasures harder to get?  I'll bet you're sorry you ever incurred the wrath of
+the programmer!!
+**END_
+
+~MSG 215
+The $NOUN$ starts jabbering away and jumping up and down excitedly.
+Unfortunately, he is speaking dwarvish, so you cannot understand what he is
+saying.  However, he appears very angry!
+**END_
+
+~MSG 216
+Unfortunately, the $NOUN$ is no where to be seen.
+**END_
+
+~MSG 217
+The troll scowls at you and spits on the ground.  "I have no time for chit-
+chat, just give me a treasure and you can cross the bridge!", he says with
+anger in his voice.
+**END_
+
+~MSG 218
+Talking to yourself is a sign of a very sick mind!
+**END_
+
+~MSG 219
+You wave at the shadowy figure and it waves back at you.  The faster you wave,
+the faster the figure waves.  Finally, you both stop as your arm gets tired.
+**END_
+
+~MSG 220
+You talk to the figure, but the figure just ignores you.  Finally, you yell at
+the top of your lungs.  The figure still ignores you.  It is almost like
+talking to yourself.
+**END_
+
+~MSG 221
+Rather than saying "TURN ON LAMP" or "TURN OFF LAMP", please use "LIGHT LAMP"
+or "EXTINGUISH LAMP".
+**END_
+
+~MSG 222
+Sorry, but this is a BIRD cage and holds only birds.  It is impossible to put
+anything else in it.
+**END_
+ 
+~MSG 223
+The cage door is broken and it wont close properly.  It is now open.
+**END_
+ 
+~MSG 224
+You close the cage door, but the latch is broken and it pops open again.
+**END_
+ 
+~MSG 225
+You attempt to $VERB$ the $NOUN$ with the $OBJECT$, but you are  
+unsuccessful.  The $OBJECT$ is a fairly poor weapon.  Perhaps you should 
+consider using an axe, a knife, some dynamite or something equally deadly. 
+**END_
+ 
+~MSG 226
+The cave walls are rough.  The floor is covered with dirt and small rocks.   
+A few statactites hang down from the ceiling -- but not far enough to reach. 
+The air is musty and smells slightly of sulfur.  Altogether a depressing 
+place. 
+**END_
+ 
+~MSG 227
+The road is little more than a dirt path.  It winds from the building to the 
+forest area at the top of the small hill. 
+**END_
+ 
+~MSG 228
+Attempting to $VERB$ the $NOUN$ is rather silly, since the $NOUN$ isn't
+even here!  Perhaps you should seek medical help of some kind.
+**END_
+ 
+~MSG 229
+The cage is made of wicker.  It currently houses a rather unhappy looking
+bird.  The bird has stopped singing and almost appears to be pouting.
+**END_
+ 
+~MSG 230
+He says, "Go explore Uranus."
+**END_
+ 
+~MSG 231
+A man is blocking your way. He says, "You'll die if you go this way."
+*PAUSE* "You think I'm crazy, don't you?"
+**END_
+
+~MSG 232
+He clears his throat several times, and
+says "Go away from here, you stupid
+computer adventurer "
+ **END_
+
+~MSG 233
+Are you Male or Female? (answer M or F, caps only)
+**END_
+
+~MSG 234
+ A violent fight breaks out over who fights you
+first. You are accidently dropped down three flights of stairs.
+ (Next time, pay more attention to the signs!)
+**END_
+
+
+~MSG 235
+There's not much point to that, anymore.
+..
+**END_
+
+
+~MSG 236
+The letters spell out:
+..
+T H E  S E C R E T  W O R D  I S :  D O S T O E V S K I
+..
+**END_
+
+~MSG 237
+ Make sure that all commands are done
+ in capitals.  For help type `H'.
+    Do you want instructions (Y/N)
+**END_
+
+~MSG 238
+ Many generations ago, during the great Elfin Wars  of the 
+  first age, there stood the majestic temple of the Drow.  The 
+  Drow are an evil race of elves dedicated to the  destruction 
+  of all elves but themselves. During this time they were rul- 
+   ed by the the evil priestess,Tar-Anclime, a great sorceress.  
+   Under the aid of her goddess Loth, she created   xxxxxxxxx
+ which was to be used to aid her side in the final des- 
+  truction of their rivals. The Drow massed for The final con- 
+   flict but they were attacked by their rival forces and there 
+  they were utterly destroyed. Now thousands of years later it 
+  is said that in the  kingdom of Rhyl that the descendents of 
+  the Drow are massing. The Drow plan to return to claim their 
+  homeland to retrieve the Amulet of Chaos
+  so they can finally 
+  destroy the elves of good. Living in the village shadowed by 
+   now crumbling  temple, you have been  chosen to retrieve the 
+   Amulet  before the Drow  return so that it can be destroyed. 
+   There are many  dangers that live in the  mazes of the ruins 
+  such as powerful  and  magic  monsters.  It is even believed 
+   that the some Drow still live in ruins.
+**END_
+
+~MSG 239
+Flares give off light which allows you to see all
+ the rooms around you. 
+**END_
+
+
+~MSG 240
+You have stepped on the dragon's tail !!
+**END_
+
+~MSG 241
+You hear footsteps!
+**END_
+
+~MSG 242
+You hear a scream.
+**END_
+
+~MSG 243
+You feel like you're being watched!
+**END_
+
+~MSG 244
+You hear faint rustling noises!
+**END_
+
+~MSG 245
+** You can't, you're out of flares!
+**END_
+
+~MSG 246
+** You don't have a lamp.
+**END_
+
+~MSG 246
+The computer starts up!
+The console displays: 'PLEASE LOG IN.
+**END_
+
+~MSG 247
+WITH A ROAR AND A MIGHTY SWING OF HIS SWORD, 
+THE OGRE TURNS YOU INTO A HEADLESS ADVENTURER.
+**END_
+
+~MSG 248
+AS THE WAND SETTLES INTO THE HOLE YOU SUDDENLY 
+HEAR A GRINDING SOUND ECHOING    THROUGHOUT 
+THE CASTLE.  THE SOUND SOON STOPS.
+**END_
+
+~MSG 249
+THE LAMP IS A STANDARD BATTERY POWERED
+  LAMP.
+**END_
+
+~MSG 250
+THE BOTTLE IS EMPTY.  A LABEL ON THE BOTTLE SAYS
+  STEVE'S WINERY, NOVEMBER 1887
+**END_
+
+~MSG 251
+GRUDGINGLY, THE *NOUN* SLOWLY MOVES TO ONE SIDE
+  REVEALED BEHIND THE BED IS A     SMALL OPENING.
+**END_
+
+~MSG 252
+AS YOU TOUCH THE MOSS, IT SHIMMERS FOR A SECOND
+ AND . . . DISAPPEARS!  IN ITS   PLACE IS A DOOR.
+**END_
+
+~MSG 253
+A SCREAM OF RAGE RESOUNDS IN THE DISTANCE 
+AND FADES AWAY TO NOTHINGNESS. 
+**END_
+
+~MSG 254
+A SHRILL CRY CUTS THROUGH THE SILENCE.  IT PIERCES
+ YOUR  MIND LIKE A KNIFE.  YOU CAN MAKE OUT THE
+ ANGUISHED CRIES AND SCREAMS OF MANY    PEOPLE. 
+**END_
+
+~MSG 255
+YOU ARE FOLLOWING A STREAM RUNNING IN A NORTH/SOUTH
+ DIRECTION. THERE IS A FORESTTO THE WEST.  THE REMAINS 
+OF AN OLD WOODEN BRIDGE ARE HERE.  ACROSS THE STREAM
+  YOU CAN SEE THE REMAINS OF THE EAST END OF THE BRIDGE.
+**END_
+
+~MSG 256
+THERE IS A CHAIN HANGING DOWN FROMTHE SHAFT.
+**END_
+
+~MSG 257
+YOU ARE IN A LOW EAST/WEST PASSAGE.  THERE IS A
+ DISTANT LIGHT TOWARDS THE EAST.
+**END_
+
+~MSG 258
+YOU ARE IN A CAVE. SITTING ON A BROKEN STALAGMITE 
+**END_
+
+~MSG 259
+YOU ARE AT THE EAST END OF A HUGE ROOM WITH 
+EXITS LEADING IN SEVERAL DIRECTIONS.THE CEILING IS 
+TOO HIGH TO MAKE OUT.
+**END_
+
+~MSG 260
+THIS IS A HALLWAY WHICH RUNS IN A NORTH/SOUTH DIRECTION. 
+**END_
+
+~MSG 261
+ A LARGE MIRROR LINES  ONE WALL.
+**END_
+
+
+

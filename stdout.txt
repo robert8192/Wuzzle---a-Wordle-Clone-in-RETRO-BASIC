@@ -1,0 +1,21 @@
+NOT SUCCESS at loading CHAR ROMnext dir entry: 18/4
+type: 0x82
+first data entry: 12/18
+name: 'ROBOTS OF XERXES"¨O˜'
+rel first entry: 0/0
+rel record length: 0
+length: 10
+a:00 x:00 y:00 pc:fce2 sp:0000 flags:........
+CIA1::Poke(): unhandled addr=0xdc03 val=0
+CIA2::Poke(): unhandled addr=0xdd03 val=0
+CIA1::Poke(): unhandled addr=0xdc02 val=ff
+CIA2::Poke(): unhandled addr=0xdd02 val=3f
+CIA1::Peek(): unhandled addr=0xdc0e
+File Not Found!
+CIA1::Peek(): unhandled addr=0xdc0e
+File Not Found!
+File Not Found!
+File Not Found!
+File Not Found!
+File Not Found!
+File Not Found!

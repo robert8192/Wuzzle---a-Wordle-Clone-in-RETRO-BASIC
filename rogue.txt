@@ -1,0 +1,213 @@
+ 
+1poke 53280,0:poke53281,0
+2x=rnd(-ti)
+3pl=64:en=38:wl=35:dr=122
+4bx=38:by=16: rem board x,y size
+5dim b(bx,by)
+6read t1:read t2
+7read t3:read t4
+
+8rem set up board
+9 PRINTCHR$(147);:POKE 49361,3:SYS49360:	SYS49584,0,0:print"                 ROGUE-LIKE":print
+
+10	for y=1 to by:for x=1 to bx
+11	read d
+12	if d=0 then b(x,y)=0
+13	if d=1 then b(x,y)=wl
+14	next:next
+15
+16	rem plot door
+17	gosub 1000
+18	dx=zx:dy=zy:b(dx,dy)=dr
+
+19	rem enemy1 start loc
+25	gosub 1000
+26	x1=zx:y1=zy : b(x1,y1)=en
+27	rem e1
+
+30	rem enemy 2 start loc
+31	gosub 1000
+32	x2=zx:y2=zy : b(x2,y2)=en
+33
+40	rem player start location
+45	gosub 1000
+50	px=zx:py=zy : b(px,py)=en
+
+
+
+100 rem print out board
+101	for y=1 to by
+111	print " ";
+120	for x=1 to bx  
+121	if b(x,y)=wl then print "{brown}"chr$(b(x,y));:goto 150
+122	print "{blue}.";
+150	next x
+152	print
+155	next y
+157	b(px,py)=0
+159	m$="{white}REACH THE EXIT ("+chr$(dr)+") FOR FREEDOM":gosub 1420
+
+165	rem place objects on board
+170	gosub 1200:gosub 1210:gosub 1220:gosub 1230
+
+190 rem ************************  main loop  ****************
+191          CT = 0
+195	POKE36174,46:POKE36175,5:POKE36173,252
+197	POKE36174,35:POKE36175,4:POKE36173,252
+200	ct=ct+1 :get d$:if d$="" and ct <4 then 200
+205          CT=1
+210	zc$="{blue}."
+211	b(px,py)=0
+212	zx=px:zy=py:gosub 1400
+213	zx=x1:zy=y1:gosub 1400
+214	zx=x2:zy=y2:gosub 1400
+
+
+230	rem upDATAte player coords
+231	if d$=chr$(157) and px=t1 and py=t2 then px=t3:py=t4:goto 400
+234	if d$=chr$(29) and px=t3 and py=t4 then px=t1:py=t2:goto 400
+235
+238	py=py-(d$=chr$(90) and py<>by and b(px,py+1)<>wl)
+239	py=py+(d$=chr$(65) and py<>1 and b(px,py-1)<>wl)
+250	px=px-(d$=chr$(77) and px<>bx and b(px+1,py)<>wl)
+260	px=px+(d$=chr$(78) and px<>1 and b(px-1,py)<>wl)
+
+
+400	if b(px,py)=dr then 1520 : rem player safe, reached door
+410	rem if b(px,py)=en then 1500 : rem player walked into enemy
+
+420	b(px,py)=pl
+430	b(x1,y1)=0
+440	b(x2,y2)=0
+
+500	rem upDATAte enemy1 coords
+505	IF CT <3 THEN 512
+510	nx=x1+sgn(px-x1)
+511	ny=y1+sgn(py-y1)
+
+512	if b(nx,ny)=0 or b(nx,ny)=pl then x1=nx:y1=ny:goto 520
+513	if b(x1,ny)=0 or b(nx,ny)=pl then y1=ny:goto 520
+514	if b(nx,y1)=0 or b(nx,ny)=pl then x1=nx:goto 520
+
+520	rem upDATAte enemy2 coords
+521	if b(x1,y1)=pl then zx=x1:zy=y1:REM goto 1500
+522	b(x1,y1)=en
+523	IF CT >2 THEN 530
+524	nx=x2+sgn(px-x2)
+525	ny=y2+sgn(py-y2)
+
+530	if b(nx,ny)=0 or b(nx,ny)=pl then x2=nx:y2=ny:goto 540
+533	if b(x2,ny)=0 or b(nx,ny)=pl then y2=ny:goto 540
+536	if b(nx,y2)=0 or b(nx,ny)=pl then x2=nx:goto 540
+
+540 rem upDAte enemy 3 coords
+542	if b(x2,y2)=pl then zx=x2:zy=y2:REM goto 1500
+545	b(x2,y2)=en
+
+600 rem got new enemy coords
+605	gosub 1210
+610	gosub 1220
+620	gosub 1230
+625          CT = CT +1:IF CT >4 THEN CT = 1
+630	goto 200
+
+640rem ***************** function section ********
+
+
+1000 rem coord generator
+1010	zx=int(rnd(1)*bx+1):zy=int(rnd(1)*by+1)
+1020	if b(zx,zy)<>0 then 1000
+1030	return
+
+1200 rem place door on board
+1201	zc$="{yellow}"+chr$(dr)+""
+1202	zy=dy:zx=dx:gosub 1400
+1203	return
+
+1210 rem place player on board
+1211	zc$="{yellow}"+chr$(pl)
+1212	zy=py:zx=px:gosub 1400
+1213	return
+
+1220 rem place enemy 1 on board
+1221	zc$="{green}"+chr$(en)
+1222	zy=y1:zx=x1:gosub 1400
+1223	return
+
+
+1230 rem place enemy 2 on board
+1240	zc$="{cyan}"+chr$(en)
+1250	zx=x2:zy=y2:gosub 1400
+1260	return
+
+
+1400 rem upDATAte board
+1402	print "{home}"
+1403	for y=1 to zy : print "{down}"; :next
+1404	print tab(zx)zc$;
+1405	return
+
+1420 rem print message
+1421	print"{home}":for y=1 to by+3+zs:print "{down}";:next
+1425	print "{yellow}"m$
+1430	return
+
+1499  rem ************ end game scenarios **********
+1500 rem caught!
+1501	gosub 1220:gosub 1230
+1502	zc$="{red}"+chr$(en)+""
+1503	gosub 1400
+1504	m$="YOU'VE BEEN CAUGHT BY THE GOBLIN!":gosub 1420
+1505	goto 1800
+
+
+1520 rem escaped!
+1521	zc$="{yellow}"+chr$(pl)+""
+1522	zx=dx:zy=dy:gosub 1400
+1523	gosub 1210
+1524	m$="YOU'VE REACHED THE EXIT AND ESCAPED!":gosub 1420
+
+1800 zs=1:m$="{yellow}WOULD YOU LIKE TO PLAY AGAIN? (Y/N)":gosub 1420
+1810 get k$:if k$="" then 1810
+1811	if k$="y" then run
+1812	end
+
+
+2000  rem level one map
+2010 rem DATA 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+2020 rem DATA 1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+2030 rem DATA 1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+2040 rem DATA 1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+2050 rem DATA 1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+2060 rem DATA 1,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+2070 rem DATA 1,0,0,0,0,0,0,0,1,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+2080 rem DATA 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1
+2090 rem DATA 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+2100 rem DATA 1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+2110 rem DATA 1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1
+2120  rem DATA 1,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+2130 rem DATA 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+2140 rem DATA 1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+2150 rem DATA 1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+2160 rem DATA 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+
+2200 rem pacman map
+2210 DATA 1,8,38,8
+2220 DATA 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+2230 DATA 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+2240 DATA 1,0,1,1,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,1,0,1
+2250 DATA 1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,0,1,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,1
+2260 DATA 1,0,1,1,0,1,1,1,1,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,1,1,1,0,1,1,0,1
+2270 DATA 1,0,0,0,0,0,1,0,0,0,0,1,0,0,1,0,1,1,1,1,1,1,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,1
+2280 DATA 1,1,1,1,0,0,1,0,0,1,0,1,0,0,0,0,1,1,1,1,1,1,0,0,0,0,1,0,1,0,0,1,0,0,1,1,1,1
+2290 DATA 0,0,0,0,0,0,1,0,0,1,0,1,0,0,1,0,1,1,1,1,1,1,0,1,0,0,1,0,1,0,0,1,0,0,0,0,0,0
+2300 DATA 1,1,1,1,0,0,1,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,1,0,0,1,1,1,1
+2310 DATA 1,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,1,1,0,0,1,1,0,1,1,0,1,0,0,0,0,0,0,0,0,0,0,1
+2320 DATA 1,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1
+2330 DATA 1,1,0,1,0,0,0,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,1,0,1,1
+2340 DATA 1,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1
+2350 DATA 1,0,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,0,1,1,0,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,0,1
+2360  DATA 1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+2370 DATA 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+
+2380 rem east exit=b(1,8) -> b(38,8)
